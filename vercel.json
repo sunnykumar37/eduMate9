@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "buildCommand": "cd integrations-module/client && npm install && npm run build",
+  "outputDirectory": "integrations-module/client/dist",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+} 
